@@ -5,10 +5,15 @@ export default {
       backgroundColor: {
         dark: "#191919",
         card: "#232323",
+        "custom-blue": "#306AC1",
+        
       },
+
+      color: {},
 
       backgroundImage: {
         "logo-react": "url('../src/imgs/atomo.avif')",
+        "img-profile": "url(../src/imgs/img-profile.jpg)",
       },
 
       screens: {

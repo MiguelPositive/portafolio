@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 
+import Profile from "../profile/Profile";
+
 const Portafolio = () => {
   const [count, setCount] = useState(0);
   const [animationPreloader, setAnimationPreloader] =
@@ -48,6 +50,11 @@ const Portafolio = () => {
             <span className="text-shadow-animation">{count}%</span>
           </div>
         </div>
+      </div>
+
+      <div>
+        <Profile />
+  
       </div>
     </div>
   );

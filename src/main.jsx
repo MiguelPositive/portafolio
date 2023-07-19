@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Portafolio from "./views/Portafolio.jsx";
+import ContextApp from "./components/context/ContextApp.jsx";
+import App from "./App.jsx";
 
-const router = createBrowserRouter([
-  { path: "/", element: <Portafolio /> },
-  { path: "*", element: <Portafolio /> },
-]);
+
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <ContextApp>
+      <App />
+    </ContextApp>
   </React.StrictMode>
 );
