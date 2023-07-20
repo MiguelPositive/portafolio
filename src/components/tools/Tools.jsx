@@ -10,6 +10,8 @@ const Tools = ({ name, icon, link }) => {
     } else if (name == "Node Js") {
       setW("w-[5.5rem]");
       setH("h-[6.2rem]");
+    } else if (name == "MongoDB") {
+      setH("h-[6rem]");
     }
   }, []);
 

@@ -19,6 +19,8 @@ export default {
         "logo-react-router-dom": "url(../src/imgs/react-router-dom.png)",
         "logo-tailwind": "url(../src/imgs/tailwind.png)",
         "logo-node": "url(../src/imgs/node.png)",
+        "logo-express": "url(../src/imgs/express.png)",
+        "logo-mongo": "url(../src/imgs/mongo.png)",
       },
 
       screens: {
@@ -28,6 +30,7 @@ export default {
         "500px": "500px",
         "530px": "530px",
         "600px": "600px",
+        "730px": "730px",
         "750px": "750px",
         "800px": "800px",
         "850px": "850px",
