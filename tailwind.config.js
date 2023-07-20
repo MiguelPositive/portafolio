@@ -16,11 +16,16 @@ export default {
         "logo-github": "url(../src/imgs/github.png)",
         "logo-linkedin": "url(../src/imgs/linkedin.png)",
         "logo-ws": "url(../src/imgs/ws.png)",
+        "logo-react-router-dom": "url(../src/imgs/react-router-dom.png)",
+        "logo-tailwind": "url(../src/imgs/tailwind.png)",
+        "logo-node": "url(../src/imgs/node.png)",
       },
 
       screens: {
+        "350px": "350px",
         "400px": "400px",
         "460px": "460px",
+        "500px": "500px",
         "530px": "530px",
         "600px": "600px",
         "750px": "750px",

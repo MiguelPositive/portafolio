@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import Profile from "../profile/Profile";
 import Contact from "../contact/Contact";
+import Technologies from "../technologies/Technologies";
 
 const Portafolio = () => {
   const [count, setCount] = useState(0);
@@ -59,6 +60,11 @@ const Portafolio = () => {
 
       <div >
         <Contact />
+      </div>
+
+      <div>
+
+        <Technologies />
       </div>
     </div>
   );
