@@ -7,7 +7,7 @@ import Contact from "../contact/Contact";
 import Technologies from "../technologies/Technologies";
 import Nav from "../nav/Nav";
 
-const Portafolio = ({children}) => {
+const Portafolio = ({ children }) => {
   const [count, setCount] = useState(0);
   const [animationPreloader, setAnimationPreloader] =
     useState("animate__bounceIn");
@@ -39,7 +39,7 @@ const Portafolio = ({children}) => {
 
   return (
     <div
-      className={`${overflowTemp} overflow-x-hidden  w-screen h-screen bg-dark`}
+      className={`${overflowTemp} overflow-x-hidden w-screen h-screen bg-dark p-5`}
     >
       <div
         id="animation-preloader"
@@ -57,19 +57,19 @@ const Portafolio = ({children}) => {
         </div>
       </div>
 
-      <div>
+      <div className="mb-7">
         <Profile />
       </div>
 
-      <div>
+      <div className="mb-7">
         <Contact />
       </div>
 
-      <div>
+      <div className=" mb-7">
         <Technologies />
       </div>
 
-      <div>
+      <div className="">
         <Nav />
       </div>
 

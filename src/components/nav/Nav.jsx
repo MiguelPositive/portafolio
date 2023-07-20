@@ -28,8 +28,8 @@ const Nav = () => {
   };
 
   return (
-    <div className="bg-card w-full flex justify-start items-center gap-2">
-      <div className="transition-all duration-200  hover:bg-custom-blue">
+    <div className="bg-card w-full flex justify-start items-center gap-2 p-2 rounded-md overflow-hidden">
+      <div className="transition-all duration-200  hover:bg-custom-blue hover:rounded-md">
         <ButtonNav
           name={"APLICACIONES"}
           go="/apps"
@@ -38,7 +38,7 @@ const Nav = () => {
         />
       </div>
 
-      <div className="transition-all duration-200  hover:bg-custom-blue">
+      <div className="transition-all duration-200  hover:bg-custom-blue hover:rounded-md">
         <ButtonNav
           name="WEBS"
           go="/webs"
@@ -47,7 +47,7 @@ const Nav = () => {
         />
       </div>
 
-      <div className="transition-all duration-200  hover:bg-custom-blue">
+      <div className="transition-all duration-200  hover:bg-custom-blue hover:rounded-md">
         <ButtonNav
           name="EDUCACIÓN"
           go="/education"

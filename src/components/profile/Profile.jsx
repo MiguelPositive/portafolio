@@ -4,7 +4,7 @@ import { store } from "../context/ContextApp";
 
 const Profile = () => {
   return (
-    <div className="bg-card text-white flex justify-center items-center flex-wrap relative pt-5 pb-5">
+    <div className="bg-card text-white flex justify-center items-center flex-wrap relative p-10 rounded-md overflow-hidden">
       <div
         id="border-image-profile"
         className="w-[10rem] h-[10rem] rounded-full bg-custom-blue absolute top-8"
@@ -20,7 +20,7 @@ const Profile = () => {
       <p className="w-full text-center mt-5">
         Desarrollador Frontend con React Js
       </p>
-      <p className="text-justify w-full pl-8 pr-8 mt-3">
+      <p className="text-justify w-full mt-3">
         Soy un desarrollador autodidacta que se encuentra en un constante
         proceso de aprendizaje, con el objetivo diario de crear soluciones
         eficientes para los proximos desafios.

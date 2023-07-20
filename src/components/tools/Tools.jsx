@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 const Tools = ({ name, icon, link }) => {
-  const [w, setW] = useState("w-[5rem]");
-  const [h, setH] = useState("h-[5rem]");
+  const [w, setW] = useState("w-[4rem]");
+  const [h, setH] = useState("h-[4rem]");
 
   useEffect(() => {
     if (name == "React-router-dom") {
-      setW("w-[7.5rem]");
+      setW("w-[6rem]");
     } else if (name == "Node Js") {
-      setW("w-[5.5rem]");
-      setH("h-[6.2rem]");
+      setW("w-[4.5rem]");
+      setH("h-[5.2rem]");
     } else if (name == "MongoDB") {
-      setH("h-[6rem]");
+      setH("h-[5rem]");
     }
   }, []);
 

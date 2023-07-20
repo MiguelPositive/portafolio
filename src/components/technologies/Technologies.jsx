@@ -3,8 +3,8 @@ import Tools from "../tools/Tools";
 
 const Technologies = () => {
   return (
-    <div className="bg-card text-white">
-      <p className="font-finger-paint text-center">Tecnologías</p>
+    <div className="bg-card text-white p-5 rounded-md overflow-hidden">
+      <p className="font-finger-paint text-center mt-3 mb-5">TECNOLOGÍAS</p>
       <div className="grid grid-cols-1 350px:grid-cols-2 500px:grid-cols-4 730px:grid-cols-6">
         <div>
           <Tools name="React" icon="bg-logo-react" />

@@ -5,7 +5,10 @@ import Portafolio from "./components/views/Portafolio";
 import Apps from "./Apps/Apps";
 
 const router = createBrowserRouter([
-  { path: "/", element: <Portafolio /> },
+  {
+    path: "/",
+    element: <Portafolio />,
+  },
   {
     path: "/apps",
     element: (
