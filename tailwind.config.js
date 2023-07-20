@@ -6,7 +6,6 @@ export default {
         dark: "#191919",
         card: "#232323",
         "custom-blue": "#306AC1",
-        
       },
 
       color: {},
@@ -14,6 +13,9 @@ export default {
       backgroundImage: {
         "logo-react": "url('../src/imgs/atomo.avif')",
         "img-profile": "url(../src/imgs/img-profile.jpg)",
+        "logo-github": "url(../src/imgs/github.png)",
+        "logo-linkedin": "url(../src/imgs/linkedin.png)",
+        "logo-ws": "url(../src/imgs/ws.png)",
       },
 
       screens: {
@@ -30,6 +32,7 @@ export default {
 
       fontFamily: {
         "finger-paint": "'Finger Paint', cursive",
+        raleway: "'Raleway', sans-serif",
       },
     },
   },

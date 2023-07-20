@@ -14,9 +14,9 @@ const Profile = () => {
         className="w-[9rem] h-[9rem] bg-img-profile bg-cover bg-left-top rounded-full absolute top-10"
       ></div>
 
-      <p className="font-finger-paint text-[200%] text-center pt-[13rem] w-full">
+      <div className="font-finger-paint text-[200%] text-center pt-[13rem] w-full">
         <p>Miguel Angel</p> <p>Clavijo Moreno</p>
-      </p>
+      </div>
       <p className="w-full text-center mt-5">
         Desarrollador Frontend con React Js
       </p>

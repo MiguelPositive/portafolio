@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 import Profile from "../profile/Profile";
+import Contact from "../contact/Contact";
 
 const Portafolio = () => {
   const [count, setCount] = useState(0);
@@ -35,7 +36,7 @@ const Portafolio = () => {
   }, [animationPreloader]);
 
   return (
-    <div className={`${overflowTemp} w-screen h-screen bg-dark`}>
+    <div className={`${overflowTemp} overflow-x-hidden  w-screen h-screen bg-dark`}>
       <div
         id="animation-preloader"
         className={`hidden animated__animated ${animationPreloader} w-full h-full flex justify-center items-center`}
@@ -54,7 +55,10 @@ const Portafolio = () => {
 
       <div>
         <Profile />
-  
+      </div>
+
+      <div >
+        <Contact />
       </div>
     </div>
   );
