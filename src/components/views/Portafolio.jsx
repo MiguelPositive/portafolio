@@ -7,7 +7,7 @@ import Contact from "../contact/Contact";
 import Technologies from "../technologies/Technologies";
 import Nav from "../nav/Nav";
 
-const Portafolio = () => {
+const Portafolio = ({children}) => {
   const [count, setCount] = useState(0);
   const [animationPreloader, setAnimationPreloader] =
     useState("animate__bounceIn");
@@ -72,6 +72,8 @@ const Portafolio = () => {
       <div>
         <Nav />
       </div>
+
+      <div>{children}</div>
     </div>
   );
 };
