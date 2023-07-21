@@ -1,34 +1,72 @@
 import React, { useEffect, useState } from "react";
 
 const Tools = ({ name, icon, link }) => {
-  const [w, setW] = useState("w-[4rem]");
-  const [h, setH] = useState("h-[4rem]");
+  const [w, setW] = useState("w-[5rem]");
+  const [h, setH] = useState("h-[5rem]");
+
+  const [shadowIcon, setShadowIcon] = useState("");
+  const [shadowText, setShadowText] = useState("");
+
+  const handleMouseMove = () => {
+    setShadowText("text-shadow-animation");
+
+    switch (true) {
+      case name == "GitHub" ||
+        name == "React" ||
+        name == "Tailwind" ||
+        name == "Linkedin":
+        setShadowIcon("shadow-blue");
+
+        break;
+
+      case name == "WhatsApp" || name == "Node Js" || name == "MongoDB":
+        setShadowIcon("shadow-green");
+        break;
+      case name == "React-router-dom" || name == "Express Js":
+        setShadowIcon("shadow-gray");
+        break;
+      default:
+    }
+  };
+
+  const handleMouseOut = () => {
+    setShadowIcon("");
+    setShadowText("");
+  };
 
   useEffect(() => {
     if (name == "React-router-dom") {
-      setW("w-[6rem]");
-    } else if (name == "Node Js") {
-      setW("w-[4.5rem]");
+      setW("w-[7.5rem] rounded-md");
       setH("h-[5.2rem]");
+    } else if (name == "Node Js") {
+      setW("w-[4.9rem] rounded-md");
+      setH("h-[5.5rem]");
     } else if (name == "MongoDB") {
-      setH("h-[5rem]");
+      setH("h-[5.8rem] rounded-md");
     }
   }, []);
 
   return (
-    <div>
+    <div
+      onMouseMove={handleMouseMove}
+      onMouseOut={handleMouseOut}
+      className="transition-all duration-100 hover:scale-110"
+    >
       <a
         target="_blank"
         href={link}
-        className="w-full flex justify-center items-center flex-wrap "
+        className="w-full flex justify-center items-center flex-wrap"
       >
         <div
           id="image-tool"
-          className={`${w} ${h} ${icon} bg-cover`}
+          className={` bg-cover transition-all duration-100 rounded-full ${w} ${h} ${icon} ${shadowIcon}`}
           title={name}
         ></div>
 
-        <div id="name-tool" className="w-full text-center mt-5">
+        <div
+          id="name-tool"
+          className={`w-full text-center text-xl font-raleway font-bold mt-5 transition-all duration-100 ${shadowText}`}
+        >
           {name}
         </div>
       </a>

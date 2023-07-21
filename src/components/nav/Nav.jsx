@@ -28,7 +28,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="bg-card w-full flex justify-start items-center gap-2 p-2 rounded-md overflow-hidden">
+    <div className="w-[97%] bg-card flex justify-start items-center gap-2 p-2  rounded-md overflow-hidden">
       <div className="transition-all duration-200  hover:bg-custom-blue hover:rounded-md">
         <ButtonNav
           name={"APLICACIONES"}

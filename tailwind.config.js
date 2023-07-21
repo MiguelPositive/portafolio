@@ -1,5 +1,5 @@
 export default {
-  content: ["./src/**/*.jsx", "./**/*.html"],
+  content: ["./src/**/*.jsx", "./**/*.html", "./**/*.css"],
   theme: {
     extend: {
       backgroundColor: {

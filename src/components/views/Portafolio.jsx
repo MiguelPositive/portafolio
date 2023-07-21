@@ -56,24 +56,28 @@ const Portafolio = ({ children }) => {
           </div>
         </div>
       </div>
+      <div className="portafolio-desktop">
+        <div>
+          <div className="mb-7">
+            <Profile />
+          </div>
 
-      <div className="mb-7">
-        <Profile />
+          <div className="mb-7">
+            <Contact />
+          </div>
+
+          <div className=" mb-7">
+            <Technologies />
+          </div>
+        </div>
+        <div className="overflow-hidden">
+          <div>
+            <Nav />
+          </div>
+
+          {children}
+        </div>
       </div>
-
-      <div className="mb-7">
-        <Contact />
-      </div>
-
-      <div className=" mb-7">
-        <Technologies />
-      </div>
-
-      <div className="">
-        <Nav />
-      </div>
-
-      <div>{children}</div>
     </div>
   );
 };

@@ -4,7 +4,9 @@ import Tools from "../tools/Tools";
 const Contact = () => {
   return (
     <div className="w-full bg-card text-white  flex justify-center items-center flex-wrap p-3 rounded-md overflow-hidden">
-      <p className="w-full text-center font-finger-paint mt-2 mb-2">CONTACTO</p>
+      <p className="w-full text-center text-xl font-finger-paint mt-2 mb-2 animation-contact">
+        CONTACTO
+      </p>
 
       <div className="mt-5 grid grid-cols-1 350px:grid-cols-2 500px:grid-cols-3">
         <div>
