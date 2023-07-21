@@ -2,7 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Portafolio from "./components/views/Portafolio";
-import Apps from "./Apps/Apps";
+import ContentWebs from "./components/views/ContentWebs";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Portafolio>
-          <Apps />
+          <ContentWebs />
         </Portafolio>
       </>
     ),

@@ -3,7 +3,7 @@ import Tools from "../tools/Tools";
 
 const Technologies = () => {
   return (
-    <div className="bg-card text-white p-5 rounded-md overflow-hidden ">
+    <div className="bg-card shadow-md shadow-black/80 text-white p-5 rounded-md overflow-hidden ">
       <p className="font-finger-paint text-center text-xl mt-3 mb-5 text-shadow-animation">
         TECNOLOGÍAS
       </p>

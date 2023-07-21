@@ -39,7 +39,7 @@ const Portafolio = ({ children }) => {
 
   return (
     <div
-      className={`${overflowTemp} overflow-x-hidden w-screen h-screen bg-dark p-5`}
+      className={`${overflowTemp} overflow-x-hidden w-full h-screen bg-dark p-5`}
     >
       <div
         id="animation-preloader"
@@ -70,12 +70,14 @@ const Portafolio = ({ children }) => {
             <Technologies />
           </div>
         </div>
-        <div className="overflow-hidden">
-          <div>
+
+        {/* De aqui para abajo es lo que se va a cargar en aplicaciones, webs y educación */}
+        <div id="contend" className="overflow-hidden">
+          <div className="mb-5">
             <Nav />
           </div>
 
-          {children}
+          <div className="w-[97%]"> {children}</div>
         </div>
       </div>
     </div>

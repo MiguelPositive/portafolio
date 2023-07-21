@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 const Tools = ({ name, icon, link }) => {
-  const [w, setW] = useState("w-[5rem]");
-  const [h, setH] = useState("h-[5rem]");
+  const [w, setW] = useState("w-[4rem]");
+  const [h, setH] = useState("h-[4rem]");
 
   const [shadowIcon, setShadowIcon] = useState("");
   const [shadowText, setShadowText] = useState("");
@@ -36,11 +36,11 @@ const Tools = ({ name, icon, link }) => {
 
   useEffect(() => {
     if (name == "React-router-dom") {
-      setW("w-[7.5rem] rounded-md");
-      setH("h-[5.2rem]");
+      setW("w-[6.3rem] rounded-md");
+      setH("h-[4.2rem]");
     } else if (name == "Node Js") {
-      setW("w-[4.9rem] rounded-md");
-      setH("h-[5.5rem]");
+      setW("w-[3.9rem] rounded-md");
+      setH("h-[4.5rem]");
     } else if (name == "MongoDB") {
       setH("h-[5.8rem] rounded-md");
     }

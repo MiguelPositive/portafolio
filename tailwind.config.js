@@ -21,6 +21,7 @@ export default {
         "logo-node": "url(../src/imgs/node.png)",
         "logo-express": "url(../src/imgs/express.png)",
         "logo-mongo": "url(../src/imgs/mongo.png)",
+        "img-animex": "url(../src/imgs/animex.png)",
       },
 
       screens: {
