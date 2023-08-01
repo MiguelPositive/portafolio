@@ -3,7 +3,7 @@ import Webs from "../Webs/Webs";
 
 const ContentWebs = () => {
   return (
-    <div className="animated__animated animate__bounceIn border-white/30 border-[1px] rounded-md flex justify-evenly flex-wrap gap-5 items-center p-8 pt-10 pb-12 overflow-y-scroll  1000px:h-[82rem] 1060px:h-[80.5rem] 1160px:h-[79rem] 1196px:h-[77rem] 1479px:h-[75rem]">
+    <div className="animated__animated animate__bounceIn border-white/30 border-[1px] rounded-md flex justify-evenly flex-wrap gap-5 items-center p-8 pt-10 pb-12 overflow-y-scroll  1000px:h-[82rem] 1060px:h-[80.5rem] 1160px:h-[79rem] 1196px:h-[77rem] 1479px:h-[75rem] custom-scroll">
       <div>
         <Webs
           title={"APRENDE A CODIFICAR MIRANDO A OTROS"}
@@ -31,7 +31,9 @@ const ContentWebs = () => {
       <div>
         <Webs
           title={"INFORMACIÓN DE AYUDA EN ACORDEON."}
-          text={"Aun no se que poner xd"}
+          text={
+            "Aquí podras encontrar información util dividida en diferentes secciones."
+          }
           link={
             "https://miguelpositive.github.io/faq-accordion-card-main.github.io/"
           }
@@ -41,8 +43,10 @@ const ContentWebs = () => {
 
       <div>
         <Webs
-          title={"SECCIÓN DE PRUEBA SOCIAL"}
-          text={"no se que poner xd"}
+          title={"RESEÑAS DE GRANDES PRODUCTOS"}
+          text={
+            "Solo ofrecemos excelentes productos combinados con un excelente servicio al cliente"
+          }
           link={
             "https://miguelpositive.github.io/social-proof-section-master.github.io/"
           }

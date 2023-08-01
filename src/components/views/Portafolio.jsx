@@ -39,7 +39,7 @@ const Portafolio = ({ children }) => {
 
   return (
     <div
-      className={`${overflowTemp} overflow-x-hidden w-full h-screen bg-dark p-5`}
+      className={`${overflowTemp} overflow-x-hidden w-full h-screen bg-dark p-5 custom-scroll`}
     >
       <div
         id="animation-preloader"
