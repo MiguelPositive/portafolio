@@ -9,24 +9,6 @@ const Tools = ({ name, icon, link }) => {
 
   const handleMouseMove = () => {
     setShadowText("text-shadow-animation");
-
-    switch (true) {
-      case name == "GitHub" ||
-        name == "React" ||
-        name == "Tailwind" ||
-        name == "Linkedin":
-        setShadowIcon("shadow-blue");
-
-        break;
-
-      case name == "WhatsApp" || name == "Node Js" || name == "MongoDB":
-        setShadowIcon("shadow-green");
-        break;
-      case name == "React-router-dom" || name == "Express Js":
-        setShadowIcon("shadow-gray");
-        break;
-      default:
-    }
   };
 
   const handleMouseOut = () => {

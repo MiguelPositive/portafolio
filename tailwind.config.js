@@ -22,6 +22,7 @@ export default {
         "logo-express": "url(../src/imgs/express.png)",
         "logo-mongo": "url(../src/imgs/mongo.png)",
         "img-animex": "url(../src/imgs/animex.png)",
+        "img-caprichos": "url(../src/imgs/caprichos.png)",
       },
 
       screens: {
@@ -37,6 +38,10 @@ export default {
         "850px": "850px",
         "900px": "900px",
         "1000px": "1000px",
+        "1060px": "1060px",
+        "1160px": "1160px",
+        "1196px": "1196px",
+        "1479px": "1479px",
       },
 
       fontFamily: {

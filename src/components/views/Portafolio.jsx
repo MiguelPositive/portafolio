@@ -43,7 +43,7 @@ const Portafolio = ({ children }) => {
     >
       <div
         id="animation-preloader"
-        className={`animated__animated ${animationPreloader} w-full h-full flex justify-center items-center mb-10`}
+        className={`hidden animated__animated ${animationPreloader} w-full h-full flex justify-center items-center mb-10`}
       >
         <div
           id="card-animation"

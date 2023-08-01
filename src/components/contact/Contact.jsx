@@ -3,7 +3,7 @@ import Tools from "../tools/Tools";
 
 const Contact = () => {
   return (
-    <div className="w-full bg-card text-white shadow-md shadow-black/80 flex justify-center items-center flex-wrap p-3 rounded-md overflow-hidden">
+    <div className="w-full bg-card text-white border-white/30 border-[1px] flex justify-center items-center flex-wrap p-3 rounded-md overflow-hidden">
       <p className="w-full text-center text-lg font-finger-paint mt-2 mb-2 animation-contact">
         CONTACTO
       </p>

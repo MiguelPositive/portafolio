@@ -4,12 +4,12 @@ import Apps from "../Webs/Webs";
 
 const ContentWebs = () => {
   return (
-    <div className="bg-card shadow-md shadow-black/80 rounded-md flex justify-evenly flex-wrap gap-5 items-start p-8 pt-10 pb-12 animated__animated animate__bounceIn">
-      <div className="">
+    <div className="border-white/30 border-[1px] rounded-md flex justify-evenly flex-wrap gap-5 items-start p-8 pt-10 pb-12 animated__animated animate__bounceIn 1000px:h-[82rem] 1060px:h-[80.5rem] 1160px:h-[79rem] 1196px:h-[77rem] 1479px:h-[75rem]">
+      <div>
         <Apps
           title={"BIBLIOTECA PERSONAL DE SERIES VISTAS"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae tellus turpis. Ut lobortis ullamcorper luctus. Integer quis metus id lacus vehicula auctor a quis tortor. Fusce at elit sit amet massa ullamcorper porttitor"
+            "Permite a los usuarios llevar un registro organizado y visualmente atractivo de las series de televisión que han visto."
           }
           img={"bg-img-animex"}
           link={"https://animex-app.netlify.app/"}
@@ -20,9 +20,9 @@ const ContentWebs = () => {
         <Apps
           title={"SISTEMA WEB DE FACTURACIÓN POS Y GESTIÓN DE INVENTARIO"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae tellus turpis. Ut lobortis ullamcorper luctus. Integer quis metus id lacus vehicula auctor a quis tortor. Fusce at elit sit amet massa ullamcorper porttitor"
+            "Aplicación web personalizada para la pizzería Caprichos "
           }
-          img={"bg-img-animex"}
+          img={"bg-img-caprichos"}
           link={"https://animex-app.netlify.app/"}
         />
       </div>

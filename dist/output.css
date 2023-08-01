@@ -566,8 +566,16 @@ video {
   position: sticky;
 }
 
-.right-\[5\.7rem\] {
-  right: 5.7rem;
+.left-0 {
+  left: 0px;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.top-1 {
+  top: 0.25rem;
 }
 
 .top-10 {
@@ -576,6 +584,18 @@ video {
 
 .top-12 {
   top: 3rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
+.top-8 {
+  top: 2rem;
 }
 
 .mb-10 {
@@ -702,12 +722,12 @@ video {
   width: 10rem;
 }
 
-.w-\[20rem\] {
-  width: 20rem;
+.w-\[18rem\] {
+  width: 18rem;
 }
 
-.w-\[25rem\] {
-  width: 25rem;
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .w-\[3\.9rem\] {
@@ -885,6 +905,23 @@ video {
   border-color: rgb(209 213 219 / 0.2);
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-white\/30 {
+  border-color: rgb(255 255 255 / 0.3);
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
+.border-\[1\] {
+  border-color: 1;
+}
+
 .border-opacity-40 {
   --tw-border-opacity: 0.4;
 }
@@ -906,6 +943,10 @@ video {
 
 .bg-img-animex {
   background-image: url(../src/imgs/animex.png);
+}
+
+.bg-img-caprichos {
+  background-image: url(../src/imgs/caprichos.png);
 }
 
 .bg-img-profile {
@@ -1272,7 +1313,7 @@ video {
     display: grid;
     width: 100%;
     gap: 2%;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 35% 65%;
   }
 }
 
@@ -1373,7 +1414,35 @@ video {
     height: 70%;
   }
 
+  .\31 000px\:h-\[82rem\] {
+    height: 82rem;
+  }
+
   .\31 000px\:w-\[45\%\] {
     width: 45%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .\31 060px\:h-\[80\.5rem\] {
+    height: 80.5rem;
+  }
+}
+
+@media (min-width: 1160px) {
+  .\31 160px\:h-\[79rem\] {
+    height: 79rem;
+  }
+}
+
+@media (min-width: 1196px) {
+  .\31 196px\:h-\[77rem\] {
+    height: 77rem;
+  }
+}
+
+@media (min-width: 1479px) {
+  .\31 479px\:h-\[75rem\] {
+    height: 75rem;
   }
 }
