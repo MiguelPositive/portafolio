@@ -23,6 +23,11 @@ export default {
         "logo-mongo": "url(../src/imgs/mongo.png)",
         "img-animex": "url(../src/imgs/animex.png)",
         "img-caprichos": "url(../src/imgs/caprichos.png)",
+        "img-acordeon": "url(../src/imgs/acordeon.png)",
+        "img-social": "url(../src/imgs/social.png)",
+        "img-learn": "url(../src/imgs/learn.png)",
+        "img-snap": "url(../src/imgs/snap.png)",
+        "img-bank": "url(../src/imgs/bank.png)",
       },
 
       screens: {

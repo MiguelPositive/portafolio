@@ -1,6 +1,6 @@
 import React from "react";
 
-const Apps = ({ title, text, img, link }) => {
+const Webs = ({ title, text, img, link }) => {
   return (
     <div className="border-white/30 border-[1px] rounded-md w-[20rem] text-white  overflow-hidden transition-all duration-50 hover:scale-105">
       <a target="_blank" href={link}>
@@ -24,4 +24,4 @@ const Apps = ({ title, text, img, link }) => {
   );
 };
 
-export default Apps;
+export default Webs;

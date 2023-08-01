@@ -846,6 +846,10 @@ video {
   justify-content: space-evenly;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -860,6 +864,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .truncate {
@@ -914,14 +922,6 @@ video {
   border-color: rgb(255 255 255 / 0.3);
 }
 
-.border-\[\] {
-  border-color: ;
-}
-
-.border-\[1\] {
-  border-color: 1;
-}
-
 .border-opacity-40 {
   --tw-border-opacity: 0.4;
 }
@@ -941,6 +941,10 @@ video {
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
 }
 
+.bg-img-acordeon {
+  background-image: url(../src/imgs/acordeon.png);
+}
+
 .bg-img-animex {
   background-image: url(../src/imgs/animex.png);
 }
@@ -949,8 +953,20 @@ video {
   background-image: url(../src/imgs/caprichos.png);
 }
 
+.bg-img-learn {
+  background-image: url(../src/imgs/learn.png);
+}
+
 .bg-img-profile {
   background-image: url(../src/imgs/img-profile.jpg);
+}
+
+.bg-img-snap {
+  background-image: url(../src/imgs/snap.png);
+}
+
+.bg-img-social {
+  background-image: url(../src/imgs/social.png);
 }
 
 .bg-logo-express {
@@ -987,6 +1003,10 @@ video {
 
 .bg-logo-ws {
   background-image: url(../src/imgs/ws.png);
+}
+
+.bg-img-bank {
+  background-image: url(../src/imgs/bank.png);
 }
 
 .bg-contain {
@@ -1402,10 +1422,6 @@ video {
 
   .\39 00px\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .\39 00px\:gap-5 {
-    gap: 1.25rem;
   }
 }
 
