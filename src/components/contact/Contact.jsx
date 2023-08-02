@@ -1,9 +1,36 @@
 import React from "react";
+import { useContext } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+
+import { store } from "../context/ContextApp";
 import Tools from "../tools/Tools";
 
 const Contact = () => {
+  const { modeDark } = useContext(store);
+
+  //variables para el cambio de modo oscuro a claro
+
+  const [bgCard, setBgCard] = useState("bg-card");
+  const [textColor, setTextColor] = useState("text-white");
+
+  useEffect(() => {
+    if (modeDark) {
+      setBgCard("bg-card");
+      setTextColor("text-white");
+    } else {
+      setBgCard("bg-white");
+      setTextColor("text-card");
+    }
+  }, [modeDark]);
+
   return (
-    <div className="w-full bg-card text-white border-white/30 border-[1px] flex justify-center items-center flex-wrap p-3 rounded-md overflow-hidden">
+    <div
+      className={`w-full ${bgCard} ${textColor}  
+      ${
+        modeDark ? "border-white/30" : "border-[#306AC1]"
+      } border-[1px] flex justify-center items-center flex-wrap p-3 rounded-md overflow-hidden transition-all duration-150`}
+    >
       <p className="w-full text-center text-lg font-finger-paint mt-2 mb-2 animation-contact">
         CONTACTO
       </p>

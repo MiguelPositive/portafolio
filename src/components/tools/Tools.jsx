@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useContext } from "react";
+import { store } from "../context/ContextApp";
 
 const Tools = ({ name, icon, link }) => {
+  const { modeDark } = useContext(store);
+
   const [w, setW] = useState("w-[4rem]");
   const [h, setH] = useState("h-[4rem]");
 
@@ -8,7 +12,11 @@ const Tools = ({ name, icon, link }) => {
   const [shadowText, setShadowText] = useState("");
 
   const handleMouseMove = () => {
-    setShadowText("text-shadow-animation");
+    if (modeDark) {
+      setShadowText("text-shadow-animation");
+    } else {
+      setShadowText("text-shadow-animation-2");
+    }
   };
 
   const handleMouseOut = () => {

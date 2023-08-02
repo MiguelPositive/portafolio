@@ -1,8 +1,19 @@
 import React from "react";
 import { useState } from "react";
+import { useContext } from "react";
+import { useEffect } from "react";
+
+import { store } from "../context/ContextApp";
 
 const Profile = () => {
+  const { modeDark } = useContext(store);
+
   const [scale, setScale] = useState("");
+
+  //variables para el cambio de modo oscuro a claro
+
+  const [bgCard, setBgCard] = useState("bg-card");
+  const [textColor, setTextColor] = useState("text-white");
 
   const handleMouseOver = () => {
     setScale("scale-125");
@@ -12,8 +23,22 @@ const Profile = () => {
     setScale("");
   };
 
+  useEffect(() => {
+    if (modeDark) {
+      setBgCard("bg-card");
+      setTextColor("text-white");
+    } else {
+      setBgCard("bg-white");
+      setTextColor("text-card");
+    }
+  }, [modeDark]);
+
   return (
-    <div className="bg-card border-white/30 border-[1px] text-white flex justify-center items-center flex-wrap relative p-10 pl-8 pr-8 rounded-md overflow-hidden">
+    <div
+      className={`${bgCard} ${textColor}  ${
+        modeDark ? "border-white/30" : "border-[#306AC1]"
+      } border-[1px] flex justify-center items-center flex-wrap relative p-10 pl-8 pr-8 rounded-md overflow-hidden transition-all duration-150`}
+    >
       <div
         id="conatiner-image-profile"
         className="w-[10rem] h-[10rem] rounded-full transition-all duration-150 hover:shadow-2xl hover:shadow-[#306AC1]/90 relative"

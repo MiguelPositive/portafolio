@@ -1,8 +1,33 @@
 import React from "react";
+import { useContext, useEffect, useState } from "react";
+
+import { store } from "../context/ContextApp";
 
 const Webs = ({ title, text, img, link }) => {
+  const { modeDark } = useContext(store);
+
+  //variables para el cambio de modo oscuro a claro
+
+  const [bgCard, setBgCard] = useState("bg-card");
+  const [textColor, setTextColor] = useState("text-white");
+
+  useEffect(() => {
+    if (modeDark) {
+      setBgCard("bg-card");
+      setTextColor("text-white");
+    } else {
+      setBgCard("bg-white");
+      setTextColor("text-card");
+    }
+  }, [modeDark]);
+
   return (
-    <div className="border-white/30 border-[1px] rounded-md w-[20rem] text-white  overflow-hidden transition-all duration-50 hover:scale-105">
+    <div
+      className={`
+      ${
+        modeDark ? "border-white/30" : "border-[#306AC1]"
+      } border-[1px] rounded-md w-[20rem] ${textColor} overflow-hidden transition-all duration-150 hover:scale-105`}
+    >
       <a target="_blank" href={link}>
         <div
           id="card-apps"

@@ -1,17 +1,25 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useContext } from "react";
 
+import { store } from "../context/ContextApp";
 import Profile from "../profile/Profile";
 import Contact from "../contact/Contact";
 import Technologies from "../technologies/Technologies";
 import Nav from "../nav/Nav";
 
 const Portafolio = ({ children }) => {
+  const { modeDark } = useContext(store);
+
   const [count, setCount] = useState(0);
   const [animationPreloader, setAnimationPreloader] =
     useState("animate__bounceIn");
   const [overflowTemp, setOverflowTemp] = useState("overflow-hidden");
+
+  //variables para el cambio de modo oscuro a claro
+
+  const [bgColor, setBgColor] = useState("bg-dark");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -37,13 +45,21 @@ const Portafolio = ({ children }) => {
     }
   }, [animationPreloader]);
 
+  useEffect(() => {
+    if (modeDark) {
+      setBgColor("bg-dark");
+    } else {
+      setBgColor("bg-[#E9E9E9]");
+    }
+  }, [modeDark]);
+
   return (
     <div
-      className={`${overflowTemp} overflow-x-hidden w-full h-screen bg-dark p-5 custom-scroll`}
+      className={`${overflowTemp} overflow-x-hidden w-full h-screen ${bgColor} p-5 custom-scroll transition-all duration-150`}
     >
       <div
         id="animation-preloader"
-        className={` animated__animated ${animationPreloader} w-full h-full flex justify-center items-center mb-10`}
+        className={`animated__animated ${animationPreloader} w-full h-full flex justify-center items-center mb-10`}
       >
         <div
           id="card-animation"

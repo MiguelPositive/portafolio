@@ -8,7 +8,10 @@ export default {
         "custom-blue": "#306AC1",
       },
 
-      color: {},
+      color: {
+        card: "#232323",
+        "custom-blue": "#306AC1",
+      },
 
       backgroundImage: {
         "logo-react": "url('../src/imgs/atomo.avif')",
@@ -21,6 +24,8 @@ export default {
         "logo-node": "url(../src/imgs/node.png)",
         "logo-express": "url(../src/imgs/express.avif)",
         "logo-mongo": "url(../src/imgs/mongo.avif)",
+        "logo-moon": "url(../src/imgs/luna.avif)",
+        "logo-sun": "url(../src/imgs/sol.avif)",
         "img-animex": "url(../src/imgs/animex.avif)",
         "img-caprichos": "url(../src/imgs/caprichos.avif)",
         "img-acordeon": "url(../src/imgs/acordeon.avif)",

@@ -1,13 +1,22 @@
 import React from "react";
-import { useState } from "react";
 import { useContext } from "react";
-import { store } from "../context/ContextApp";
+import { useEffect } from "react";
+import { useState } from "react";
 
+import { store } from "../context/ContextApp";
 import ButtonNav from "../buttons/ButtonNav";
+import ButtonMode from "../mode/ButtonMode";
 
 const Nav = () => {
-  const { button1, button2, button3, setButton1, setButton2, setButton3 } =
-    useContext(store);
+  const {
+    button1,
+    button2,
+    button3,
+    setButton1,
+    setButton2,
+    setButton3,
+    modeDark,
+  } = useContext(store);
 
   const handleClickApps = () => {
     setButton1(true);
@@ -27,33 +36,59 @@ const Nav = () => {
     setButton3(true);
   };
 
+  //variables para el cambio de modo oscuro a claro
+
+  const [bgCard, setBgCard] = useState("bg-card");
+  const [textColor, setTextColor] = useState("text-white");
+
+  useEffect(() => {
+    if (modeDark) {
+      setBgCard("bg-card");
+      setTextColor("text-white");
+    } else {
+      setBgCard("bg-white");
+      setTextColor("text-card");
+    }
+  }, [modeDark]);
+
   return (
-    <div className="w-[97%] bg-card  border-white/30 border-[1px] flex justify-start items-center gap-2 p-2  rounded-md overflow-hidden">
-      <div className="transition-all duration-200 hover:bg-custom-blue hover:rounded-md">
-        <ButtonNav
-          name={"APLICACIONES"}
-          go="/apps"
-          main={button1}
-          action={handleClickApps}
-        />
+    <div
+      className={`w-[97%] ${bgCard}   
+      ${
+        modeDark ? "border-white/30" : "border-[#306AC1]"
+      } border-[1px] flex justify-between items-center gap-2 p-2 rounded-md overflow-hidden transition-all duration-150`}
+    >
+      <div className="flex justify-center items-center gap-5">
+        <div className="">
+          <ButtonNav
+            name={"APLICACIONES"}
+            go="/apps"
+            main={button1}
+            action={handleClickApps}
+          />
+        </div>
+
+        <div className="">
+          <ButtonNav
+            name="WEBS"
+            go="/webs"
+            main={button2}
+            action={handleClickwebs}
+          />
+        </div>
+
+        <div className="">
+          <ButtonNav
+            name="EDUCACIÓN"
+            go="/education"
+            main={button3}
+            action={handleClickEducation}
+          />
+        </div>
       </div>
 
-      <div className="transition-all duration-200  hover:bg-custom-blue hover:rounded-md">
-        <ButtonNav
-          name="WEBS"
-          go="/webs"
-          main={button2}
-          action={handleClickwebs}
-        />
-      </div>
-
-      <div className="transition-all duration-200  hover:bg-custom-blue hover:rounded-md">
-        <ButtonNav
-          name="EDUCACIÓN"
-          go="/education"
-          main={button3}
-          action={handleClickEducation}
-        />
+      <div>
+        <ButtonMode />
       </div>
     </div>
   );

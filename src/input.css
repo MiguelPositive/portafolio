@@ -10,6 +10,10 @@
   text-shadow: 0px 0px 18px #1a4483;
 }
 
+.text-shadow-animation-3 {
+  text-shadow: 0px 0px 10px black;
+}
+
 .animation-contact {
   animation-name: animation-contact;
   animation-duration: 500ms;

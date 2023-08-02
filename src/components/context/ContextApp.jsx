@@ -5,17 +5,26 @@ import { useState } from "react";
 export const store = createContext();
 
 const ContextApp = ({ children }) => {
-
-
   // Son los botones del nav
 
   const [button1, setButton1] = useState(false);
   const [button2, setButton2] = useState(false);
   const [button3, setButton3] = useState(false);
 
+  const [modeDark, setModeDark] = useState(true);
+
   return (
     <store.Provider
-      value={{ button1, button2, button3, setButton1, setButton2, setButton3 }}
+      value={{
+        button1,
+        button2,
+        button3,
+        setButton1,
+        setButton2,
+        setButton3,
+        modeDark,
+        setModeDark,
+      }}
     >
       {children}
     </store.Provider>
