@@ -26,7 +26,7 @@ const Webs = ({ title, text, img, link }) => {
       className={`
       ${
         modeDark ? "border-white/30" : "border-[#306AC1]"
-      } border-[1px] rounded-md w-[20rem] ${textColor} overflow-hidden transition-all duration-150 hover:scale-105`}
+      } border-[1px] rounded-md w-[14rem] ${textColor} overflow-hidden transition-all duration-150 hover:scale-105 350px:w-[18rem] 400px:w-[20rem]`}
     >
       <a target="_blank" href={link}>
         <div
@@ -35,7 +35,7 @@ const Webs = ({ title, text, img, link }) => {
         >
           <div
             id="img-card-apps"
-            className={`${img} bg-cover bg-center rounded-md w-[18rem] h-[14rem] shadow-md shadow-black/80`}
+            className={`${img} bg-cover bg-center rounded-md w-[13rem] h-[13rem] shadow-md shadow-black/80 350px:w-[16rem] 400px:w-[18rem]`}
             title={title}
           ></div>
         </div>
