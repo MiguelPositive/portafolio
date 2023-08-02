@@ -55,7 +55,7 @@ const Nav = () => {
       className={`w-[100%] ${bgCard}   
       ${
         modeDark ? "border-white/30" : "border-[#306AC1]"
-      } border-[1px] flex justify-between items-center gap-2 p-2 rounded-md overflow-hidden transition-all duration-150 1000px:w-[97%]`}
+      } border-[1px] flex justify-between items-center gap-2 p-2 rounded-md overflow-hidden transition-all duration-150 overflow-x-scroll 400px:overflow-x-auto custom-scroll 1000px:w-[97%] `}
     >
       <div className="flex justify-center items-center gap-5">
         <div className="">
