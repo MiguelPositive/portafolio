@@ -63,7 +63,7 @@ const Portafolio = ({ children }) => {
       >
         <div
           id="card-animation"
-          className="bg-card w-[90%] h-[60%] rounded-md flex flex-wrap justify-center items-center 400px:w-[70%] 460px:w-[65%] 530px:w-[60%] 750px:w-[50%] 850px:w-[45%] 900px:w-[42%] 1000px:w-[45%] 1000px:h-[70%]"
+          className="bg-card w-[20rem] h-[20rem] rounded-md flex flex-wrap justify-center items-center p-5 350px:h-[22rem] 400px:w-[22rem]  450px:w-[24rem] 450px:h-[24rem] 500px:w-[26rem] 500px:h-[28rem] "
         >
           <div className="bg-logo-react bg-cover w-[10rem] h-[10rem] animate-spin"></div>
 

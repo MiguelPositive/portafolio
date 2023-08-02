@@ -39,6 +39,7 @@ export default {
       },
 
       screens: {
+        "300px":"300px",
         "330px": "330px",
         "350px": "350px",
         "400px": "400px",
