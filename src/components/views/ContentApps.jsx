@@ -30,7 +30,7 @@ const ContentApps = () => {
       className={`${bgColor}  
       ${
         modeDark ? "border-white/30" : "border-[#306AC1]"
-      } border-[1px] rounded-md flex justify-evenly flex-wrap gap-5 items-start p-8 pt-10 pb-12 animated__animated animate__bounceIn 1000px:h-[82rem] 1060px:h-[80.5rem] 1160px:h-[79rem] 1196px:h-[77rem] 1479px:h-[75rem]`}
+      } border-[1px] w-[100%] rounded-md flex justify-evenly flex-wrap gap-5 items-start p-8 pt-10 pb-12 animated__animated animate__bounceIn 1000px:h-[82rem] 1000px:w-[97%] 1060px:h-[80.5rem] 1160px:h-[79rem] 1196px:h-[77rem] 1479px:h-[75rem] `}
     >
       <div>
         <Webs

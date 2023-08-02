@@ -5,7 +5,6 @@ import { useState } from "react";
 
 import { store } from "../context/ContextApp";
 import ButtonNav from "../buttons/ButtonNav";
-import ButtonMode from "../mode/ButtonMode";
 
 const Nav = () => {
   const {
@@ -53,10 +52,10 @@ const Nav = () => {
 
   return (
     <div
-      className={`w-[97%] ${bgCard}   
+      className={`w-[100%] ${bgCard}   
       ${
         modeDark ? "border-white/30" : "border-[#306AC1]"
-      } border-[1px] flex justify-between items-center gap-2 p-2 rounded-md overflow-hidden transition-all duration-150`}
+      } border-[1px] flex justify-between items-center gap-2 p-2 rounded-md overflow-hidden transition-all duration-150 1000px:w-[97%]`}
     >
       <div className="flex justify-center items-center gap-5">
         <div className="">
@@ -85,10 +84,6 @@ const Nav = () => {
             action={handleClickEducation}
           />
         </div>
-      </div>
-
-      <div>
-        <ButtonMode />
       </div>
     </div>
   );

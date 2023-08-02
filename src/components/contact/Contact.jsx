@@ -35,7 +35,7 @@ const Contact = () => {
         CONTACTO
       </p>
 
-      <div className="mt-5 grid grid-cols-1 350px:grid-cols-2 500px:grid-cols-3">
+      <div className="mt-5 grid grid-cols-1 350px:grid-cols-2 500px:grid-cols-3 gap-5">
         <div>
           <Tools
             name="GitHub"

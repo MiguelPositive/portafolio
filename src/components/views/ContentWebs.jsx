@@ -30,7 +30,7 @@ const ContentWebs = () => {
       className={`animated__animated animate__bounceIn 
       ${bgColor}
      ${modeDark ? "border-white/30" : "border-[#306AC1]"}
-     border-[1px] rounded-md flex justify-evenly flex-wrap gap-5 items-center p-8 pt-10 pb-12 overflow-y-scroll  1000px:h-[82rem] 1060px:h-[80.5rem] 1160px:h-[79rem] 1196px:h-[77rem] 1479px:h-[75rem] custom-scroll`}
+     border-[1px]  rounded-md flex justify-evenly flex-wrap gap-5 items-center p-8 pt-10 pb-12 overflow-y-scroll  1000px:h-[82rem] 1060px:h-[80.5rem] 1160px:h-[79rem] 1196px:h-[77rem] 1479px:h-[75rem] custom-scroll`}
     >
       <div>
         <Webs

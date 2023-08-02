@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { useEffect } from "react";
 
 import { store } from "../context/ContextApp";
+import ButtonMode from "../mode/ButtonMode";
 
 const Profile = () => {
   const { modeDark } = useContext(store);
@@ -39,6 +40,9 @@ const Profile = () => {
         modeDark ? "border-white/30" : "border-[#306AC1]"
       } border-[1px] flex justify-center items-center flex-wrap relative p-10 pl-8 pr-8 rounded-md overflow-hidden transition-all duration-150`}
     >
+      <div className="absolute top-2 right-2">
+        <ButtonMode />
+      </div>
       <div
         id="conatiner-image-profile"
         className="w-[10rem] h-[10rem] rounded-full transition-all duration-150 hover:shadow-2xl hover:shadow-[#306AC1]/90 relative"
@@ -60,7 +64,7 @@ const Profile = () => {
       </div>
       <p className="w-full mt-5 font-raleway font-bold text-lg text-justify">
         Desarrollador Frontend con uso de
-        <span className="ml-2 mr-2 text-[#306AC1] text-shadow-animation-2 transition-all duration-100 hover:text-2xl">
+        <span className="ml-2 mr-2 text-[#306AC1] text-shadow-animation-2 transition-all duration-100">
           React Js
         </span>
         , autodidacta, que se encuentra en un constante proceso de aprendizaje

@@ -59,7 +59,7 @@ const Portafolio = ({ children }) => {
     >
       <div
         id="animation-preloader"
-        className={`animated__animated ${animationPreloader} w-full h-full flex justify-center items-center mb-10`}
+        className={`hidden animated__animated ${animationPreloader} w-full h-full flex justify-center items-center mb-10`}
       >
         <div
           id="card-animation"
@@ -93,7 +93,7 @@ const Portafolio = ({ children }) => {
             <Nav />
           </div>
 
-          <div className="w-[97%]"> {children}</div>
+          <div className="w-[100%] 1000px:w-[97%]"> {children}</div>
         </div>
       </div>
     </div>
