@@ -4,29 +4,52 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Portafolio from "./components/views/Portafolio";
 import ContentApps from "./components/views/ContentApps";
 import ContentWebs from "./components/views/ContentWebs";
+import ContentEducation from "./components/views/ContentEducation";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:  <>
-    <Portafolio>
-      <ContentApps />
-    </Portafolio>
-  </>,
+    element: (
+      <>
+        <Portafolio>
+          <ContentApps />
+        </Portafolio>
+      </>
+    ),
   },
-  
 
-  {path:"/webs", 
-  element: (
-  <><Portafolio > 
-    <ContentWebs /> 
-  </Portafolio> </>)},
+  {
+    path: "/webs",
+    element: (
+      <>
+        <Portafolio>
+          <ContentWebs />
+        </Portafolio>
+      </>
+    ),
+  },
 
-  { path: "*", element:  <>
-  <Portafolio>
-    <ContentApps />
-  </Portafolio>
-</> },
+  {
+    path: "/education",
+    element: (
+      <>
+        <Portafolio>
+          <ContentEducation />
+        </Portafolio>
+      </>
+    ),
+  },
+
+  {
+    path: "*",
+    element: (
+      <>
+        <Portafolio>
+          <ContentApps />
+        </Portafolio>
+      </>
+    ),
+  },
 ]);
 
 const App = () => {

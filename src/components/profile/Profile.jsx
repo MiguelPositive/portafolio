@@ -35,7 +35,7 @@ const Profile = () => {
       </div>
       <p className="w-full mt-5 font-raleway font-bold text-lg text-justify">
         Desarrollador Frontend con uso de
-        <span className="ml-2 mr-2 text-[#306AC1] text-shadow-animation-2">
+        <span className="ml-2 mr-2 text-[#306AC1] text-shadow-animation-2 transition-all duration-100 hover:text-2xl">
           React Js
         </span>
         , autodidacta, que se encuentra en un constante proceso de aprendizaje

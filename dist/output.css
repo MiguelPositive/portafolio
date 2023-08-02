@@ -706,6 +706,10 @@ video {
   height: 60%;
 }
 
+.h-\[60rem\] {
+  height: 60rem;
+}
+
 .h-\[9rem\] {
   height: 9rem;
 }
@@ -732,6 +736,10 @@ video {
 
 .w-\[3\.9rem\] {
   width: 3.9rem;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
 }
 
 .w-\[4rem\] {
@@ -942,23 +950,27 @@ video {
 }
 
 .bg-img-acordeon {
-  background-image: url(../src/imgs/acordeon.png);
+  background-image: url(../src/imgs/acordeon.avif);
 }
 
 .bg-img-animex {
-  background-image: url(../src/imgs/animex.png);
+  background-image: url(../src/imgs/animex.avif);
+}
+
+.bg-img-bachiller {
+  background-image: url(../src/imgs/bachiller.avif);
 }
 
 .bg-img-bank {
-  background-image: url(../src/imgs/bank.png);
+  background-image: url(../src/imgs/bank.avif);
 }
 
 .bg-img-caprichos {
-  background-image: url(../src/imgs/caprichos.png);
+  background-image: url(../src/imgs/caprichos.avif);
 }
 
 .bg-img-learn {
-  background-image: url(../src/imgs/learn.png);
+  background-image: url(../src/imgs/learn.avif);
 }
 
 .bg-img-profile {
@@ -966,27 +978,35 @@ video {
 }
 
 .bg-img-snap {
-  background-image: url(../src/imgs/snap.png);
+  background-image: url(../src/imgs/snap.avif);
 }
 
 .bg-img-social {
-  background-image: url(../src/imgs/social.png);
+  background-image: url(../src/imgs/social.avif);
+}
+
+.bg-img-tecnico {
+  background-image: url(../src/imgs/tecnico.avif);
+}
+
+.bg-img-tecnologo {
+  background-image: url(../src/imgs/tecnologo.avif);
 }
 
 .bg-logo-express {
-  background-image: url(../src/imgs/express.png);
+  background-image: url(../src/imgs/express.avif);
 }
 
 .bg-logo-github {
-  background-image: url(../src/imgs/github.png);
+  background-image: url(../src/imgs/github.avif);
 }
 
 .bg-logo-linkedin {
-  background-image: url(../src/imgs/linkedin.png);
+  background-image: url(../src/imgs/linkedin.avif);
 }
 
 .bg-logo-mongo {
-  background-image: url(../src/imgs/mongo.png);
+  background-image: url(../src/imgs/mongo.avif);
 }
 
 .bg-logo-node {
@@ -998,15 +1018,15 @@ video {
 }
 
 .bg-logo-react-router-dom {
-  background-image: url(../src/imgs/react-router-dom.png);
+  background-image: url(../src/imgs/react-router-dom.avif);
 }
 
 .bg-logo-tailwind {
-  background-image: url(../src/imgs/tailwind.png);
+  background-image: url(../src/imgs/tailwind.avif);
 }
 
 .bg-logo-ws {
-  background-image: url(../src/imgs/ws.png);
+  background-image: url(../src/imgs/ws.avif);
 }
 
 .bg-contain {
@@ -1366,6 +1386,16 @@ video {
 .hover\:bg-custom-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(48 106 193 / var(--tw-bg-opacity));
+}
+
+.hover\:text-2xl:hover {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.hover\:text-xl:hover {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .hover\:shadow-2xl:hover {
